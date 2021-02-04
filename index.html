@@ -14,6 +14,10 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,12 +27,21 @@
       >
       <a href="#">Home</a>
       <a href="#">About me</a>
-      <a href="#">Services</a>
       <a href="#">My works</a>
+      <a href="#">Contact me</a>
     </div>
-    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-      >&#9776;</span
-    >
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Erez Katsman</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Student at Cyber4s
+      </p>
+      <img class="intro__img" src="img/me.jpg" alt="" />
+    </section>
 
     <script src="script.js"></script>
   </body>
