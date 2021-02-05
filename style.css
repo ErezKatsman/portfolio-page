@@ -128,6 +128,7 @@ h3 {
   font-size: 30px;
   cursor: pointer;
   margin: 25px 0px 0px 25px;
+  position: fixed;
 }
 
 .sidenav .closebtn {
@@ -182,5 +183,46 @@ h3 {
       "img title"
       "img subtitle";
     grid-template-columns: min-content max-content;
+  }
+}
+
+/* about me section */
+.about-me {
+  background-color: var(--clr-dark);
+  background-image: url(img/about-me.png);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
+  background-position: center;
+}
+
+.section__title--about-me {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__title--about-me::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background-color: var(--clr-light);
+  opacity: 0.25;
+}
+
+.btn {
+  background-color: var(--clr-accent);
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-weight: var(--fw-bold);
+  padding: 10px 30px;
+}
+
+@media (min-width: 800px) {
+  .abouts {
+    display: flex;
+    justify-content: space-around;
   }
 }
