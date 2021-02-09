@@ -129,6 +129,8 @@ h3 {
   cursor: pointer;
   margin: 25px 0px 0px 25px;
   position: fixed;
+  text-shadow: -1px 0 var(--clr-light), 0 1px var(--clr-light),
+    1px 0 var(--clr-light), 0 -1px var(--clr-light);
 }
 
 .sidenav .closebtn {
@@ -220,9 +222,57 @@ h3 {
   padding: 10px 30px;
 }
 
+.btn:hover {
+  background-color: #12aa90;
+}
+
 @media (min-width: 800px) {
   .abouts {
     display: flex;
     justify-content: space-around;
   }
+}
+
+/* my works */
+
+.works {
+  text-align: center;
+  background-color: var(--clr-dark);
+}
+
+.section__title--works {
+  color: var(--clr-light);
+}
+
+.section__subtitle--works {
+  color: var(--clr-accent);
+  margin-bottom: 40px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__item {
+  margin: 5px;
+}
+
+.portfolio__img {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.05);
+  opacity: 0.5;
 }
