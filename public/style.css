@@ -44,6 +44,11 @@ body {
   line-height: 1.6;
 }
 
+a,
+a:active {
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -132,6 +137,7 @@ h3 {
   position: fixed;
   text-shadow: -1px 0 var(--clr-light), 0 1px var(--clr-light),
     1px 0 var(--clr-light), 0 -1px var(--clr-light);
+  z-index: 2;
 }
 
 .sidenav .closebtn {
@@ -232,6 +238,9 @@ h3 {
     display: flex;
     justify-content: space-around;
   }
+  .about {
+    width: 30%;
+  }
 }
 
 /* my works */
@@ -295,6 +304,31 @@ h3 {
   color: var(--clr-light);
   text-align: center;
   background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.section__subtitle--contact {
+  margin-top: 30px;
+}
+
+.contact-icons {
+  margin: 40px;
+}
+
+.contact-icons i {
+  margin: 0px 30px;
+  transition: 2000ms;
+  color: var(--clr-light);
+}
+
+.contact-icons i:active,
+.contact-icons i:visited {
+  color: var(--clr-light);
+}
+
+.contact-icons i:hover {
+  color: var(--clr-accent);
 }
 
 .section__title--contact {
@@ -322,11 +356,12 @@ h3 {
 
 .contact-container .contact-info .box {
   position: relative;
-  padding: 20px 0px;
+  padding: 30px 0px;
   display: flex;
 }
 
 .contact-container .contact-info .box .icon {
+  transition: 2000ms;
   min-width: 60px;
   height: 60px;
   color: var(--clr-dark);
@@ -336,6 +371,17 @@ h3 {
   align-items: center;
   border-radius: 50%;
   font-size: 22px;
+  cursor: pointer;
+}
+
+.contact-container .contact-info .box .icon:hover {
+  background-color: var(--clr-accent);
+}
+
+.contact-container .contact-info .box .icon a:visited,
+.contact-container .contact-info .box .icon a,
+.contact-container .contact-info .box .icon a:active {
+  color: var(--clr-dark);
 }
 
 .contact-container .contact-info .box .text {
@@ -413,7 +459,7 @@ h3 {
   color: var(--clr-light);
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 16px;
   font-size: 18px;
 }
 
