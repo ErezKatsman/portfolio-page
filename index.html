@@ -171,22 +171,30 @@
           </div>
         </div>
         <div class="contact-form">
-          <form action=https://yourwebsite.com/myform-processor.php>
+          <form
+            action="https://formsubmit.co/erezkatsman2311@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://erezkatsman.github.io/portfolio-page/"
+            />
             <h2>Send message</h2>
             <div class="input-box">
-              <input type="text" name="" required />
+              <input type="text" name="fullName" required />
               <span>Full Name</span>
             </div>
             <div class="input-box">
-              <input type="text" name="" required />
+              <input type="text" name="email" required />
               <span>Email</span>
             </div>
             <div class="input-box">
-              <textarea required></textarea>
+              <textarea name="message" required></textarea>
               <span>Type your message...</span>
             </div>
             <div class="input-box">
-              <input type="submit" name="" value="Send" />
+              <input type="submit" value="Send" />
             </div>
           </form>
         </div>
