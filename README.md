@@ -1,2 +1,2 @@
 # portfolio-page
-ek-portfolio-d03dd.firebaseapp.com
+https://ek-portfolio-d03dd.firebaseapp.com/
