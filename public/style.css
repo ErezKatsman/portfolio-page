@@ -42,7 +42,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(207, 200, 200);
+  background: rgb(204, 195, 195);
 }
 
 /* Handle */
@@ -299,8 +299,8 @@ h3 {
 }
 
 .portfolio__img {
-  height: 300px;
-  width: 600px;
+  height: 270px;
+  width: 550px;
   object-fit: cover;
   vertical-align: bottom;
   transition: 2000ms;
